@@ -18,5 +18,16 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+  },
+  settings: {
+    'import/resolver': {
+      'eslint-import-resolver-custom-alias': {
+        alias: {
+          src: './src',
+        },
+        extensions: ['.js', '.jsx'],
+      },
+    },
   },
 };

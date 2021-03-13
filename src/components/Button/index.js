@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   background: #35B6FF;
@@ -30,10 +30,10 @@ const ImageButton = styled.button`
     background-color: rgba(211, 234, 255, 0.56);
   }
 
-  ${({rounded}) => {
+  ${({ rounded }) => {
     if (rounded === 'left') {
       return css`border-radius: 10px 0px 0px 10px;`;
-    } else if (rounded === 'right') {
+    } if (rounded === 'right') {
       return css`border-radius: 0px 10px 10px 0px;`;
     }
 
@@ -43,5 +43,5 @@ const ImageButton = styled.button`
 
 export {
   Button as default,
-  ImageButton
-}
+  ImageButton,
+};

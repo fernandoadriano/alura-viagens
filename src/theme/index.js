@@ -2,13 +2,13 @@ import { css } from 'styled-components';
 import breakpointsMedia from './utils/breakpointsMedia';
 
 export const breakpoints = {
-    xs: 0,
-    sm: 600,
-    md: 960,
-    lg: 1280,
-    xl: 1920,
-  };
-  
+  xs: 0,
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920,
+};
+
 export const textVariants = {
   formTitle: css`
     font-family: Pattaya;
@@ -16,21 +16,21 @@ export const textVariants = {
     color: #0094E8;
 
     ${breakpointsMedia({
-      xs: css`
+    xs: css`
         font-size: 36px;
         margin-bottom: 16px
       `,
-      md: css`
+    md: css`
         font-size: 72px;
         margin-bottom: 24px
       `,
-    })}
+  })}
   `,
   subtitle: css`
     font-size: 24px;
     margin-bottom: 18px;
   `,
-}
+};
 
 export default {
   textVariants,

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 import Input from 'src/components/Input';
 import Text from 'src/foundations/typography/Text';
@@ -16,7 +16,7 @@ Form.Row = styled.span`
   justify-content: flex-start;
 `;
 
-Form.Field = ({ label, name, autoFocus=false }) => (
+Form.Field = ({ label, name, autoFocus = false }) => (
   <span
     style={{
       display: 'flex',
@@ -29,7 +29,7 @@ Form.Field = ({ label, name, autoFocus=false }) => (
     }}
   >
     <Text marginLeft="8px">{label}</Text>
-    <Input name={name} autoFocus={autoFocus}/>
+    <Input name={name} autoFocus={autoFocus} />
   </span>
 );
 

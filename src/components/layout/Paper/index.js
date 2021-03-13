@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import breakpointsMedia from 'src/theme/utils/breakpointsMedia';
 
 const Paper = styled.div`

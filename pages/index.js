@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 import Box from 'src/components/layout/Box';
 import Button, { ImageButton } from 'src/components/Button';
@@ -18,27 +18,28 @@ export default function Home() {
         flex="1"
         flexDirection="column"
         backgroundColor="white"
-        padding={{xs: "18px 16px", md: "0px 170px"}}
+        padding={{ xs: '18px 16px', md: '0px 170px' }}
       >
         <Text variant="formTitle">Alura Viagens</Text>
         <Form>
           <Text variant="subtitle">Quando será a viagem?</Text>
           <Form.Row>
-            <Form.Field autoFocus
+            <Form.Field
+              autoFocus
               name="dataSaida"
               label="Data de saída"
             />
-            <Form.Field 
+            <Form.Field
               name="dataRetorno"
               label="Data de retorno"
             />
           </Form.Row>
           <Form.Row>
-            <Form.Field 
+            <Form.Field
               name="localOrigem"
               label="Local de origem"
             />
-            <Form.Field 
+            <Form.Field
               name="localChegada"
               label="Local de chegada"
             />
@@ -60,20 +61,20 @@ export default function Home() {
             <Form.Field
               name="nome"
               label="Nome"
-              />
+            />
           </Form.Row>
           <Form.Row>
-            <Form.Field 
+            <Form.Field
               name="sobrenome"
               label="Sobrenome"
             />
           </Form.Row>
           <Form.Row>
-            <Form.Field 
+            <Form.Field
               name="paisResidencia"
               label="País de residência"
             />
-            <Form.Field 
+            <Form.Field
               name="dataNascimento"
               label="Data de nascimento"
             />
@@ -82,16 +83,16 @@ export default function Home() {
             <Form.Field
               name="cpf"
               label="CPF"
-              />
+            />
           </Form.Row>
           <Form.Row>
-            <Form.Field 
+            <Form.Field
               name="email"
               label="E-mail"
             />
-          </Form.Row>          
+          </Form.Row>
           <Form.Row>
-            <Form.Field 
+            <Form.Field
               name="fone"
               label="Telefone"
             />

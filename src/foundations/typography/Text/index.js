@@ -19,7 +19,7 @@ const TextBase = styled.span`
 const Text = styled(TextBase)`
   ${({ variant, theme }) => {
     if (variant && theme.textVariants[variant]) {
-      return theme.textVariants[variant]
+      return theme.textVariants[variant];
     }
   }}
 `;

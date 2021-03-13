@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 import Box from 'src/components/layout/Box';
 import Paper from 'src/components/layout/Paper';
 import Text from 'src/foundations/typography/Text';

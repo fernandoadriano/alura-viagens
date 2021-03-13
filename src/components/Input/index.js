@@ -1,10 +1,4 @@
-import styled, { css } from 'styled-components';
-import Box from 'src/components/layout/Box';
-import Paper from 'src/components/layout/Paper';
-import Text from 'src/foundations/typography/Text';
-import IconCard from 'src/theme/icons/Card';
-import IconPayPal from 'src/theme/icons/PayPal';
-import IconTransfer from 'src/theme/icons/Transfer';
+import styled from 'styled-components';
 
 const Input = styled.input`
   margin-top: 8px;

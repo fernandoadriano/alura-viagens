@@ -1,10 +1,9 @@
-import styled, { css } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Input from 'src/components/Input';
 import Text from 'src/foundations/typography/Text';
-// import IconCard from 'src/theme/icons/Card';
-// import IconPayPal from 'src/theme/icons/PayPal';
-// import IconTransfer from 'src/theme/icons/Transfer';
 
 const Form = styled.form`
 `;
@@ -16,7 +15,7 @@ Form.Row = styled.span`
   justify-content: flex-start;
 `;
 
-Form.Field = ({ label, name, autoFocus = false }) => (
+Form.Field = ({ label, name, autoFocus }) => (
   <span
     style={{
       display: 'flex',
@@ -32,5 +31,15 @@ Form.Field = ({ label, name, autoFocus = false }) => (
     <Input name={name} autoFocus={autoFocus} />
   </span>
 );
+
+Form.Field.defaultProps = {
+  autoFocus: false,
+};
+
+Form.Field.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  autoFocus: PropTypes.bool,
+};
 
 export default Form;

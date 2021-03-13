@@ -21,6 +21,8 @@ const Text = styled(TextBase)`
     if (variant && theme.textVariants[variant]) {
       return theme.textVariants[variant];
     }
+
+    return null;
   }}
 `;
 

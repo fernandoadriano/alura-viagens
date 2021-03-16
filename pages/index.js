@@ -92,6 +92,7 @@ const SchemaPedido = yup.object().shape({
 export default function Home() {
   const [formaPagto, setFormaPagto] = useState('Cash');
   const handleSubmit = (data) => {
+    // eslint-disable-next-line no-console
     console.log(JSON.stringify(data, null, 4).replace('_', ''));
   };
 
@@ -150,7 +151,7 @@ export default function Home() {
             />
           </Form.Row>
           <Text variant="subtitle">Como será o pagamento?</Text>
-          <Form.Row field="formaPagto" value={formaPagto}>
+          <Form.Row value={formaPagto}>
             <ImageButton
               rounded="left"
               selected={formaPagto === 'Cash'}

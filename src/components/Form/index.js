@@ -130,16 +130,25 @@ Form.RowWrapper = styled.span`
   justify-content: flex-start;
 `;
 
-Form.Row = ({ field, value, children }) => {
+Form.Row = ({ value, children }) => {
   const { setFormaPagto } = useContext(FormContext);
 
   useEffect(() => {
-    if (field && value) setFormaPagto(value);
+    if (value) setFormaPagto(value);
   }, [value]);
 
   return (
     <Form.RowWrapper>{children}</Form.RowWrapper>
   );
+};
+
+Form.Row.defaultProps = {
+  value: '',
+};
+
+Form.Row.propTypes = {
+  children: PropTypes.node.isRequired,
+  value: PropTypes.string,
 };
 
 Form.Button = ({ children }) => {

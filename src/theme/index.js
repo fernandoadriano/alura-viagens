@@ -4,6 +4,11 @@ import breakpoints from './breakpoints';
 import breakpointsMedia from './utils/breakpointsMedia';
 
 export const textVariants = {
+  formFieldError: css`
+    font-size: 12px;
+    margin-left: 8px;
+    color: red;
+  `,
   formTitle: css`
     font-family: Pattaya;
     line-height: 1.389;

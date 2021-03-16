@@ -13,6 +13,11 @@ const Button = styled.button`
   font-size: 18px;
   line-height: 1.167;
   color: #FFFFFF;
+
+  &:disabled {
+    color: #35B6FF;
+    background-color: rgba(220, 220, 220, 0.5);
+  }
 `;
 
 const ImageButton = styled.button`
@@ -26,10 +31,7 @@ const ImageButton = styled.button`
   background-color: transparent;
   margin-bottom: 32px;
 
-  &:focus {
-    background-color: rgba(211, 234, 255, 0.56);
-  }
-
+  ${({ selected }) => selected && css`background-color: rgba(211, 234, 255, 0.56);`}
   ${({ rounded }) => {
     if (rounded === 'left') {
       return css`border-radius: 10px 0px 0px 10px;`;
